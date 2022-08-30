@@ -63,4 +63,12 @@ button.addEventListener("click", () => {
     RunIp();
 })
 
+//RICERCA ABILITATA CON IL CLICK DEL TASTO "ENTER"//
+Input.addEventListener("keydown", (e) => {
+    if (e.keyCode === 13) {
+        RunIp();
+        e.preventDefault();
+      }
+     
+})
 
